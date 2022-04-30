@@ -93,8 +93,8 @@
 
         // Initialise server
 
-        const serverUrl = "SERVER_URL"
-        const appId = "APP_ID"
+        const serverUrl = "https://srkbsckbxl48.usemoralis.com:2053/server"
+        const appId = "gUu2brYL0xPbaikCJlFVy0kn7ehOXUX3TTJojups"
         Moralis.start({ serverUrl, appId })
 
 
@@ -104,12 +104,12 @@
 
             let noteUser = Moralis.User.current()
             let commentContent = document.getElementById('new-comment').value
-            if(commentContent === ""){return alert("ERROR: empty note")}
+            if (commentContent === "") { return alert("ERROR: empty note") }
 
             newNote.set('content', commentContent)
             newNote.set('noteUser', noteUser)
             newNote.set('writer', noteUser.get('username'));
-            newNote.setACL(new Moralis.ACL(Moralis.User.current()));    
+            newNote.setACL(new Moralis.ACL(Moralis.User.current()));
             await newNote.save()
             document.getElementById('new-comment').value = "";
             renderComments();
