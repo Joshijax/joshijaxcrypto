@@ -1,7 +1,7 @@
 // INITIALISE MORALIS
 (async function(){
-    const serverUrl = "SERVER_URL"
-    const appId = "APP_ID"
+    const serverUrl = "https://srkbsckbxl48.usemoralis.com:2053/server"
+    const appId = "gUu2brYL0xPbaikCJlFVy0kn7ehOXUX3TTJojups"
     await Moralis.start({ serverUrl, appId })
 })();
 
