@@ -702,7 +702,7 @@ if (window.location.pathname.endsWith(dashboard)){
     }
 }
 
-
+document.getElementById("btn-login-userSignin").onclick = login;
 
 // LOGIN LISTENERS
 if (document.querySelector('#btn-login')){
