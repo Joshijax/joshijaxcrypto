@@ -704,6 +704,8 @@ if (window.location.pathname.endsWith(dashboard)){
 
 document.getElementById("btn-login-userSignin").onclick = login;
 
+document.getElementById("btn-login").onclick = login;
+
 // LOGIN LISTENERS
 if (document.querySelector('#btn-login')){
     document.querySelector('#btn-login').onclick = login;
